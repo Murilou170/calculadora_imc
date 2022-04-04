@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({Key key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
+  String text = 'text';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +26,7 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const [
+        children: [
           Icon(Icons.person_outline, size: 120.0, color: Colors.green),
           TextField(
             keyboardType: TextInputType.number,
@@ -43,12 +45,8 @@ class _HomeState extends State<Home> {
             style: TextStyle(color: Colors.green, fontSize: 25.0),
           ),
           ElevatedButton(
-            child: Text(
-              "Calcular",
-              style: TextStyle(color: Colors.white, fontSize: 25.0),
-            ),
-            onPressed: (){},
-
+              onPressed: () {},
+              child: Text("calcular")
           )
         ],
       ),
