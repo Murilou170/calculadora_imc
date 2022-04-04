@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.green,
         actions: [
           IconButton(
-            icon:const Icon(Icons.refresh),
+            icon: const Icon(Icons.refresh),
             onPressed: () {},
           )
         ],
@@ -30,10 +30,25 @@ class _HomeState extends State<Home> {
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
                 labelText: "Peso(Kg)",
-                labelStyle: TextStyle(color: Colors.green)
-            ),
+                labelStyle: TextStyle(color: Colors.green)),
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.green, fontSize: 25.0),
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "Altura(cm)",
+                labelStyle: TextStyle(color: Colors.green)),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.green, fontSize: 25.0),
+          ),
+          ElevatedButton(
+            child: Text(
+              "Calcular",
+              style: TextStyle(color: Colors.white, fontSize: 25.0),
+            ),
+            onPressed: (){},
+
           )
         ],
       ),
